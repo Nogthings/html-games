@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Retro</title>
+    <link rel="stylesheet" href="game-styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Juego Retro</h1>
+            <nav>
+                <button id="startButton">Iniciar</button>
+                <button id="pauseButton">Pausar</button>
+                <button id="resetButton">Reiniciar</button>
+            </nav>
+        </header>
+        <main>
+            <div class="game-ui">
+                <div class="score-display">
+                    <span>Puntuación:</span>
+                    <span id="scoreValue">0</span>
+                </div>
+                <div class="level-display">
+                    <span>Nivel:</span>
+                    <span id="levelValue">1</span>
+                </div>
+            </div>
+            <div id="gameCanvas" class="game-canvas">
+                <!-- El juego se renderizará aquí -->
+                <div class="game-character"></div>
+            </div>
+        </main>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+
