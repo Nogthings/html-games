@@ -18,6 +18,8 @@ body {
 header {
     text-align: center;
     margin-bottom: 40px;
+    border-bottom: 2px solid #0f0;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -33,33 +35,32 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #0f0;
-    border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0;
+    margin: 5px;
 }
 
 nav ul li a {
-    color: #000;
+    color: #0f0;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px 20px;
-    display: block;
+    padding: 5px 10px;
+    border: 1px solid #0f0;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background-color: #000;
-    color: #0f0;
+    background-color: #0f0;
+    color: #000;
 }
 
 /* Contenido principal */
 .scores-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
 }
 
@@ -77,6 +78,8 @@ h2 {
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    border-bottom: 1px solid #0f0;
+    padding-bottom: 10px;
 }
 
 table {
@@ -89,6 +92,7 @@ th,
 td {
     padding: 10px;
     text-align: center;
+    border: 1px solid #0f0;
 }
 
 th {
@@ -150,11 +154,10 @@ body::after {
 
     nav ul {
         flex-direction: column;
-        border-radius: 10px;
     }
 
-    nav ul li a {
-        padding: 10px;
+    nav ul li {
+        margin: 5px 0;
     }
 
     .scores-grid {
